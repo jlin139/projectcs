@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<body class="background">
+    <h1 class="box1">Discrete Structures<br>Counting</h1>
+  <img class="photoedit" src="https://i.imgur.com/3X0Ya3A.jpg">
+  <h2 class="counting">Counting</h2> 
+  <p> Counting sounds like an elementary topic. <br><br><b> How many ways are there to choose our way of transportation to school if we have the choice of bus, train or car? <br><br></b> Sounds simple. We have three choices. 
+    <br><br> What happens if we have a question as such: In New Hampshire, license plates consisted of two letters followed by 3 digits. How many possible license plates are there? <br><br> In this case, counting becomes much more complicated.  <br><br>
+    <p> We can find all the outcomes by listing <br>
+      <img src="https://i.imgur.com/NHIRLHS.jpg"><br><br>
+      or by drawing a tree diagram. <br>
+      <img src="https://i.imgur.com/c1noVDs.jpg">
+      <br><br>
+    
+  <p class="paragraph1"> <b>When one needs to find the number of possible outcomes for a series of events, the mathematical theory of counting is used. This theory encompasses the </p>
+   <p class="paragraphcolor">Addition Rule, Multiplication Rule, Permutations and Counting.</b></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MmzJF2L_5PA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+<h2 class="counting">Addition Rule</h2>
+  <p class="paragraph2">The Addition Rule states that:
+    <br><br>If there are two tasks: <br><br><b>T1 and T2 </b><br><br><b>with T1 having O1 of possible outcomes </b><br><br><b> and T2 having O2 of possible outcomes <br><br> with |O1|=N1 and |O2|=N2, </b><br><br>then the total number of outcomes for T1 <b>OR</b> T2 is 
+    <br><br><b>N1+N2.</b> <br>
+    <p class="formulahighlight"><br><u>In Other Terms:</u><br><br>
+You have two different events: <br><br>If event A can occur M times and event B can occur N times, <br><br><b> then there are M + N ways that one of these events can occur. </b> <br><br>
+  </p>
+<p> 
+  <b><u>In the case where you have k choices, the following will be done: </u>
+  </b><br><br>
+  <img class="photoedit2" src="https://i.imgur.com/m9Quyfm.jpg"></p>
+  <p class="colorcode"><br><u><b><br>
+    Example Question:</u></b>
+    <br></p><p>
+You need to purchase one shirt of any kind. The store has five short sleeve shirts and eight long sleeve shirts. How many possible ways are there to choose a shirt? <br><br>
+<details>
+    <summary>  Answer</summary>
+ 
+    <pre>
+    <code>5 + 8 = 13 <br> There are 13 possible ways to <br> choose a shirt</code>
+    </pre>
+</details>
+  </p>
+  
+  
+  
+<h2 class="counting">Mutiplication Rule</h2>
+<p>The multiplication rule states that:
+<br><br>
+If there are two choices for T1 and T2 <b><br><br>with T1 having a set of O1 of possible outcomes <br><br>and T2 having a set of O2 of possible outcomes<br><br> with |O1|=N1 and |O2|=N2, <br><br>then the total numbers of possible outcomes for T1 and T2 occurring is N1 x N2 <br><br></b><br>
+    <p class="formulahighlight"><br><u>In Other Terms:</u><br><br>
+You have two different events: <br><br>If event A can occur M times and event B can occur N times, <br><br><b> then there are M x N ways that both of these events can occur together. </b> <br><br>
+  </p>
+  <p> 
+  <b><u>In the case where you have k choices, the following will be done: </u>
+  </b><br><br>
+  <img class="photoedit2" src="https://i.imgur.com/PNuq6fM.jpg"></p>
+  <p class="colorcode"><u><b>
+    Example:</u></b>
+    <br></p><p>
+You are asked to select a pair of men’s jeans and you know that four styles are available (standard fit, loose fit, boot fit, and slim fit) and each style comes in two colors (blue or black). How many possible jean configurations are there? <br><br></p>
+<details>
+<summary> Solution</summary> 
+    <pre>
+    <code><br> C1=” choose the jean styles” = {standard fit, loose fit, boot fit, slim fit} <br><br>
+C2=” choose the jean colors” = {black, blue} <br><br>
+We then determine the cardinalities of the set:<br><br>
+n1=|c1|=4,<br><br>
+n2=|c2|=2,<br><br>
+Total number of outcomes=n1xn2=4x2=8.</code>
+    </pre>
+</details>
+
+  <h2 class="counting">Factorial</h2>
+<p> Before heading into permutations and combinations,
+ permutations needs to be discussed to actually know
+  how to ulitize the formulas. <br><br>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/pxh__ugRKz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+</p> 
+
+<h2 class="counting">Permutations</h2>
+  <p><b>Permutation of objects is an arrangement where <span class="colortext"> order, or position, does matter.</span> </b><br><br>
+A telephone of 123-456-7890 is not the same as 789-012-3456.<br><br>
+<b>There are certain key criteria for a permutation. First, order does matter and second, an object can only be used once. </b>
+<br><br>
+The number of permutations for r items chosen from a total of n items is denoted P(n,r). 
+<br><br>
+The formula for calculating P(r,r) is given by
+<br><br><b>
+    <img class="photoedit2" src="https://i.imgur.com/qnu89P5.jpg"></p></b>
+<p><u> Understanding the concept </u></p>
+<p>
+ The best way to understand permutations is to do an example. We have a 8 people <br><br>
+  {Alice, Becky, Thomas, Carlos, Tiffany and Mike}
+  <br><br>
+  and we have three chairs. How many different ways can they be seated? <br><br>
+ We must first ask, does order matter here? 
+  <br><br>
+  Yes, let's say Mike is in seat one. The next chair can be seated by any of the other people, expect Mike. Mike can't be in seat one AND two so order matters. Therefore, we will use permutations. 
+  <br> <br>
+ The formula is P(n,r)= n! / (n-r)! <br><br>
+  We have a total of 6 items, so n is 6. We have three seats, so r is 3. Plug the numbers into the formula and we get, <br><br>
+  P(6,3) = (6!) / (6-3)! = 120.    
+    </p><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Zwo8MBX724" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+    <u><b>Example:<br><br></u> If a baseball team has 25 players, how many battling orders are there? (Batting order has nine players and order does matter)
+    <br><br></p>
+<details>
+    <summary>  Answer</summary>
+    <pre>
+    <code>Solution: A battling order consist of 9 players. Here order matters so 
+<br>
+P(25,9)= 25! / 16! = <br>
+25 x 24…x 17 x 16! <br>
+/ (divided by)<br>
+16! <br>
+= 25 x 24 x 23 x 22 x 21 x 20 x 18 x 17 = 741,354,768,000</code>
+    </pre>
+</details>
+
+<h2 class="counting">Combinations</h2>
+  <p><b>Combination of objects is an arrangement <span class="colortext">where order does not matter. </span>
+    <br><br></b>
+If we need to choose r items from n, and order does not matter, we denote this as C(n,r)<br><br>
+The formula for calculating combinations is given by
+<br><br>
+<b>C(n,r)= P(n,r) / r!  
+  <br><br><u>OR<br><br></u>
+<img class="photoedit2" src="https://i.imgur.com/1wyO6zV.jpg"></p></b></b>
+<p><u> Understanding the concept </u></p> <br>
+We have the following question: You want to go on a car ride but there are three seats and you can only bring two friends out of the five. <br><br> How many different groups of friends could you take with you? <br><br>
+Sounds simple. There are five people for seat one and then four people for seat two. <br><br> Not quite. <br> Say we picked our friend Linda and Carlos, Linda for seat one and Carlos for seat two. We have one here, but later, we get Carlos for seat one and Linda for seat two, yet they both already are on possible outcome. If this sounds confusing, try listing out the outcomes. Start by reducing the number to a lower one. <br><br>
+In this case, we would have miscounted since we counted all the outcomes twice. 
+<br><br> 
+To get the number of outcomes, we will use counting. We need to choose 2 people out of our 5 friends, so r is 2 and n is 5. Plug the formula in: <br><br>
+C(5,2): 5! / (3!)2! = 120 / 12 = 10 <br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWPj-Q5e9Lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<u><b>Example:<br><br></u></br> How many ways can a teacher choose 4 students out of the 20 in her class? <br><br>
+</p>
+
+<details>
+    <summary>  Answer</summary>
+ 
+    <pre>
+    <code>Solution: Since order does not matter, the answer would be 
+<br><br>
+C(20,4)= 20! / 4!x16! = 20x19x18x17 divided by 4! = 4,845</code>
+    </pre>
+</details>
+
+<h2 class="counting">Practice and Links</h2>
+
+<p> Question One: 
+
+  How many odd three-digit numbers are there (allowing leading zeros, such as 007)? <br></p>
+<details>
+    <summary>  Answer</summary>
+    <pre>
+    <code>Solution: Here, we have C1, C2, and C3, having 01, 02 and 03 possible outcomes, respectively. <br>
+O1 and O2 both equal to {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} while O3 equal to {1, 3, 5, 7, 9}. <br>
+So |O1| = 10, |O2| = 10, |O3| = 5. <br>
+Hence there are 10 × 10 × 5 = 500 outcomes. </p></code></pre>
+     
+</details> <br>
+
+<p> Question Two: 
+
+  You have four dogs, Pepper, Ruby, Penny and Olive. You want to arrange them in order, but Penny and Ruby must be placed next to each other. How many ways can you arrange them? <br></p>
+<details>
+    <summary>  Answer</summary>
+    <pre>
+    <code>Solution: <br> Let's first look at the question without the idea 
+    of placing them together. <br> We can draw this out, using _ _ _ _ with 4 x 3 x 2 x 1 or 4! <br> However, since Penny and Ruby need to be placed together, <br> we will consider them as one unit, so it will be 3 x 2 x 1.
+    <br> However, Ruby may be in front OR penny may be in front so we mutiply that number by two. The answer will be 12. 
+     </p></code></pre>
+     
+</details> <br>
+Permutations and Combinations:
+Click <a href="https://www.mathsisfun.com/combinatorics/combinations-permutations.htmlm">here.</a> <br>
+
+Link 
+<a href="http://www.cs.nthu.edu.tw/~wkhon/math/lecture/lecture08.pdf">2</a> <br>
+
+
+Rules of sum and product, summary and practice problems:
+Click <a href="https://brilliant.org/wiki/rule-of-sum-and-rule-of-product-problem-solving/">here.</a><br>
+
+Permutations and Combinations Practice: 
+Click <a href="https://mathbitsnotebook.com/Algebra2/Probability/PBPermutationPractice.html">here.</a> 
+
+</p> 
+</body>
+</html>
